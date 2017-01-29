@@ -535,8 +535,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("/dist/assets/fonts/bootstrap/glyphicons-halflings-regular.eot");
-  src: url("/dist/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("/dist/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("/dist/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("/dist/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("/dist/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+  src: url("/hpbr-proto-react/dist/assets/fonts/bootstrap/glyphicons-halflings-regular.eot");
+  src: url("/hpbr-proto-react/dist/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("/hpbr-proto-react/dist/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("/hpbr-proto-react/dist/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("/hpbr-proto-react/dist/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("/hpbr-proto-react/dist/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
 .glyphicon {
   position: relative;
@@ -2023,10 +2023,10 @@ section.active #home-header-logotype {
 .main-dolls-list .item svg {
   width: 60%;
   float: left;
-  -webkit-shape-outside: url("/assets/images/doll-circle.svg");
+  -webkit-shape-outside: url("/hpbr-proto-react/dist/assets/images/doll-circle.svg");
   -webkit-shape-image-threshold: 0.5;
   -webkit-shape-margin: .714em;
-  shape-outside: url("/assets/images/doll-circle.svg");
+  shape-outside: url("/hpbr-proto-react/dist/assets/images/doll-circle.svg");
   shape-image-threshold: 0.5;
   shape-margin: .714em;
   margin-right: .714em;

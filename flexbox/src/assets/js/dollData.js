@@ -3,7 +3,7 @@ const dollData = [
     type: 'side-pony',
     name: 'Side Pony',
     gender: 'girl', 
-    imageUrl: 'dist/assets/images/side-pony.jpg',
+    imageUrl: 'hpbr-proto-react/dist/assets/images/side-pony.jpg',
     price: 70.00,
     tags: [
       { id: 1, name: 'Sale', type: 'sale' },
@@ -19,14 +19,14 @@ const dollData = [
     type: 'high-pigtail',
     name: 'High Pigtail', 
     gender: 'girl',
-    imageUrl: 'dist/assets/images/pigtails.jpg',
+    imageUrl: 'hpbr-proto-react/dist/assets/images/pigtails.jpg',
     price: 60.00
   },
   { id: 3,
     type: 'top-bun',
     name: 'Top Bun', 
     gender: 'girl',
-    imageUrl: 'dist/assets/images/top-bun.jpg',
+    imageUrl: 'hpbr-proto-react/dist/assets/images/top-bun.jpg',
     price: 60.00,
     sale: {
       price: 45.00,
@@ -40,7 +40,7 @@ const dollData = [
     type: 'pixie-cut',
     name: 'Pixie Cut',
     gender: 'girl', 
-    imageUrl: 'dist/assets/images/pixie-cut.jpg',
+    imageUrl: 'hpbr-proto-react/dist/assets/images/pixie-cut.jpg',
     price: 60.00
   }
 ];
