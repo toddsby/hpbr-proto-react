@@ -1,0 +1,8 @@
+body {
+  background-color: #423852;
+  overflow: hidden;
+}
+
+.contain {
+  width: 300px;
+}

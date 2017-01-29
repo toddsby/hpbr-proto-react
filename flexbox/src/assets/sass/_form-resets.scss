@@ -1,0 +1,205 @@
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: .357em;
+  font-weight: bold;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  color: #555555;
+  background-color: #fff;
+  background-image: none;
+}
+
+.form-control-feedback {
+  position: absolute;
+  top: .945em;
+  right: .560em;
+  z-index: 2;
+  display: block;
+  width: 2.43rem;
+  height: 2.43rem;
+  /* same as input font-size */
+  line-height: 1.28em;
+  pointer-events: none;
+}
+
+.success .form-control-feedback {
+  color: #58bb58;
+  color: rgba(128,233,150,1);
+}
+
+/*
+
+.input-lg + .form-control-feedback, 
+.input-group-lg > .form-control + .form-control-feedback,
+.input-group-lg > .input-group-addon + .form-control-feedback,
+.input-group-lg > .input-group-btn > .btn + .form-control-feedback {
+  width: 3.29em;
+  height: 3.29em;
+  line-height: 3.29em;
+}
+*/
+
+
+
+.input-lg {
+  font-size: 1.28em;
+  padding: .714rem .875rem;
+}
+
+.has-feedback .form-control {
+  padding-right: 4.5rem;
+}
+
+.has-feedback.with-forgot-pw .form-control {
+  padding-right: 7rem;
+}
+
+/*
+
+.input-lg, .input-group-lg > .form-control, 
+.input-group-lg > .input-group-addon {
+  height: 3.29em;
+  padding: .714em .875em;
+  line-height: 1.3333333;
+}
+
+*/
+
+/* hide form labels, except from screen readers  - from bootstrap 3*/
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.has-icon {
+  position: relative;
+}
+
+.has-icon input {
+  padding-right: 3.036em;
+}
+
+.form-group {
+  margin-bottom: 1.07em;
+}
+
+/* custom form elements */
+
+.btn-block {
+  font-family: "MSansText", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  display: block;
+  width: 100%;
+}
+
+.btn-lg, .btn-group-lg > .btn {
+  padding: .714em .875em;
+  font-size: .778em;
+  line-height: 1.3333333;
+  border-radius: .429em;
+}
+
+.btn-info {
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+
+input[type="text"], input[type="text"], input[type="password"], input[type="email"], textarea, textarea.form-control {
+  font-family: "MSansText", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  -webkit-appearance: none;
+  border: .214em solid #ddd;
+  border-radius: 4px;
+  box-shadow: none;
+  -webkit-transition: border-color .3s, background-color .3s;
+  transition: border-color .3s, background-color .3s;
+}
+
+input[type="text"]:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus, textarea.form-control:focus {
+  -webkit-appearance: none;
+  outline: 0;
+  background: #fff;
+  //border: 3px solid #66afe9;
+  border: .214em solid #A2E9B1;
+  box-shadow: none;
+}
+
+/* custom inline form errors */
+
+/* VALIDATION ERROR STYLING */
+
+.error input, input[type="text"].error, input[type="email"].error, input[type="password"].error, .error textarea, textarea.error, .error input:focus, input.error:focus, .error textarea:focus, textarea.error:focus {
+  border-color: #c60f13;
+  border-color: rgba(198,15,19, 1);
+  background-color: rgba(198, 15, 19, 0.1);
+}
+
+input[type="text"].error:focus, input[type="password"].error:focus, input[type="email"].error:focus, textarea.error:focus, textarea.error.form-control:focus {
+  -webkit-appearance: none;
+  border-color: #c60f13;
+}
+
+/* VALIDATION SUCCESS STYLING */
+.success input, input[type="text"].success, input[type="email"].success, input[type="password"].success, .success textarea, textarea.success, .success input:focus, input.success:focus, .success textarea:focus, textarea.success:focus {
+  border-color: #58bb58;
+  border-color: rgba(128,233,150,1);
+}
+
+input[type="text"].success:focus, input[type="password"].success:focus, input[type="email"].success:focus, textarea.success:focus, textarea.success.form-control:focus {
+  -webkit-appearance: none;
+  border-color: #58bb58;
+  border-color: rgba(128,233,150,1);
+}
+
+.error small, small.error {
+  font-family: "MSansText", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  display: block;
+  padding: 6px 4px 6px 12px;
+  margin-top: -4px;
+  margin-bottom: 12px;
+  background: #c60f13;
+  color: #fff;
+  font-size: .857em;
+  font-weight: bold;
+  -moz-border-radius-bottomleft: 2px;
+  -webkit-border-bottom-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  -moz-border-radius-bottomright: 2px;
+  -webkit-border-bottom-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.next-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.forgot-pw {
+  color: rgba(102,175,233,1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 5.714em;
+  height: 3.29em;
+  line-height: 3.29em;
+  text-align: center;
+}

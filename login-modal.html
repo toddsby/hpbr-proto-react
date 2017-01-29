@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in | Handpicked by Ruby</title>
+  <link rel="stylesheet" href="/assets/application_bundle.css">
+  <meta name="csrf-param" content="_csrf"><meta name="csrf-token">
+</head>
+<body class="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12" id="app">
+        <div class="login-box">
+          <div class="login modal-header">
+            <h4 class="no-pad">Log in</h4>
+          </div>
+          <form action="/login" method="post" novalidate>
+            <input type="hidden" name="_csrf">
+            <div class="modal-body">
+              <div class="form-group">
+                <div class="input-group input-group-lg">
+                  <span class="input-group-addon">
+                    <i class="fa fa-user"></i>
+                  </span>
+                  <input class="form-control" type="email" name="email" placeholder="user@email.com" required autofocus>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group input-group-lg">
+                  <span class="input-group-addon">
+                    <i class="fa fa-lock"></i>
+                  </span>
+                  <input class="form-control" type="password" name="password" placeholder="Password" autocapitalize="none" autocorrect="off" required>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <div class="text-center">
+                <button class="btn btn-lg btn-info btn-block" type="submit">Log in</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/assets/application_bundle.js"></script>
+</body>
+</html>

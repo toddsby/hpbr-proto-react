@@ -1,0 +1,24 @@
+
+.btn-doll-customize-shape {
+  font-family: "MSansText", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  width:40%;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  font-weight: 700;
+  /* font-size: 14px; */
+  font-size: 1em;
+  /* padding: 7px 5px 7px 5px; */
+  padding: .500em .357em .500em .357em;
+  color: #A2E9B1;
+  background-color: #fff;
+  border-radius: 1.786em;
+  border: .143em solid #A2E9B1;
+  border-top-right-radius: 1.786em;
+  border-top-left-radius: 1.786em;
+}
+
+.btn-doll-customize-shape:active {
+  border: .143em solid rgba(255,255,255,0);
+  color: rgba(255,255,255,1);
+  background-color: #A2E9B1;
+}

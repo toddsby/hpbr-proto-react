@@ -1,0 +1,110 @@
+// import reset
+@import "reset";
+
+// browser baseline
+@import "baseline";
+
+@import "breakpoints";
+
+@import "grid";
+
+// import glphicons
+@import "glyphicons";
+
+// import common
+@import "common";
+
+// import form resets
+@import "form-resets";
+
+// import custom buttons
+@import "buttons";
+
+// import custom typeface
+@import "custom-typeface";
+
+@import "home";
+
+// import home header styles
+@import "home-header";
+
+// import main dolls list
+@import "main-dolls-list";
+
+// import login-modal
+@import "login-modal";
+
+#home-footer-huge {
+  height: 35em;
+}
+
+.app-content-blur {
+  //-webkit-filter: blur(.714em);
+  //filter: blur(0.714em);
+}
+
+#app-perspective-container {
+  //position: relative;
+  // distance from z-index 0
+  // greater number more subtle the effect
+  -webkit-perspective: 71.42em;
+  perspective: 71.42em;
+}
+
+.app-zoom-out {
+  -webkit-transform: translate3d(0, 0, -3em);
+  transform: translate3d(0, 0, -3em);
+}
+
+#app-scale {
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transition: transform 350ms;
+}
+
+#app-scale.lock-for-modal {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: rgba(255,255,255,0);
+}
+
+.app-overlay.modal {
+  background: rgba(68,68,68,.5);
+}
+
+#app-bg-default {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgba(255,255,255,1);
+}
+
+#app-bg-texture {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background: rgba(68,68,68,1);
+}
+
+/* lock viewport on touch device for modal */
+
+html.lock-for-modal, body.lock-for-modal {
+  height: 100%;
+  overflow: hidden;
+}

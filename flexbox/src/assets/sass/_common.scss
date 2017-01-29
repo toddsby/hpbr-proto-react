@@ -1,0 +1,66 @@
+.main {
+  //margin-left: auto;
+  //margin-right: auto;
+  //padding-left: 10px;
+  //padding-right: 10px;
+  //max-width: 1170px;
+  //overflow: hidden;
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn:hover, .btn:focus, .btn.focus {
+  text-decoration: none;
+}
+
+.btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
+  outline: none;
+}
+
+.btn:active, .btn.active {
+  outline: 0;
+  background-image: none;
+  transform: translateY(4px);
+}
+
+button {
+  overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.centered {
+  text-align: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+h1 {
+  font-size: 2.57em;
+  margin-top: 1.43em;
+  margin-bottom: .514em;
+}

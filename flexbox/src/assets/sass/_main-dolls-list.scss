@@ -1,0 +1,183 @@
+.main-dolls-list {
+  /* 
+  .item {
+    padding-bottom: 1.786em;
+  }
+  */
+  li {
+    //color: rgba(255,255,255,1);
+    //background-color: rgba(246,246,246,1);
+  }
+  .item {
+    //float:left;
+    //margin-bottom: 1.786em;
+    padding-bottom: 1.786em;
+    width: 100%;
+    svg {
+      width: 60%;
+      float:left;
+      -webkit-shape-outside: url('/assets/images/doll-circle.svg');
+      -webkit-shape-image-threshold: 0.5;
+      -webkit-shape-margin: .714em;
+      shape-outside: url('/assets/images/doll-circle.svg');
+      shape-image-threshold: 0.5;
+      shape-margin: .714em;
+      margin-right: .714em;
+    }
+  }
+  .tag {
+    display: inline-block; 
+    text-transform: uppercase;
+    padding: .143em .429em;
+    padding-top: .2em;
+    border-radius: .143em;
+    margin-right: .357em;
+    margin-bottom: .357em;
+    color: #fff;
+    /* font-size: 10px; */
+    font-size: .714em;
+    /* letter-spacing: .5px; */
+    letter-spacing: .036em;
+    font-family: "MSansText", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    white-space: nowrap;
+  }
+}
+
+.money-info .sale {
+  color: #E16596;
+}
+
+.limited-qty {
+  text-transform: uppercase;
+  font-family: "MSansText", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: rgb(115,175,206);
+  font-size: .714em;
+}
+
+.tags {
+  margin-bottom: 1.1em;
+}
+
+.tags.notags {
+  visibility: hidden;
+}
+
+.tag.sale {
+  background-color: rgba(225,101,150,.5);
+  /*
+  background: -webkit-linear-gradient(left, #ffffff 0% ,#ffffff 30%, rgb(225,94,88) 100%);
+  background: linear-gradient(to right, #ffffff 0%, #ffffff 30%, rgb(225,94,88) 100%);
+
+  background-color: rgba(225,101,150,.5);
+  background: -webkit-linear-gradient(left, #ffffff 0% ,#ffffff 30%, rgb(225,101,150) 100%);
+  background: linear-gradient(to right, #ffffff 0%, rgb(225,101,150) 30%, rgb(225,101,150) 100%);
+  */
+}
+
+.tag.limited {
+  background-color: rgba(115,175,206,.5);
+  /*
+  background: -webkit-linear-gradient(left, #ffffff 0% ,#ffffff 30%, rgb(115,175,206) 100%);
+  background: linear-gradient(to right, #ffffff 0%, rgb(115,175,206) 30%, rgb(115,175,206) 100%);
+  */
+}
+
+.tag.top {
+  background-color: rgba(250,187,116,.5);
+  /*
+  background: -webkit-linear-gradient(left, #ffffff 0% ,#ffffff 30%, rgb(250,187,116) 100%);
+  background: linear-gradient(to right, #ffffff 0%, rgb(250,187,116) 30%, rgb(250,187,116) 100%);
+  */
+}
+
+.item-name {
+  /* 18px relative to 14px body */
+  font-size: 1.286em;
+  color: #333;
+  margin-bottom: .357em;
+}
+
+.money-info {
+  font-family: "MSansText", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  margin-bottom: 1.071em;
+}
+
+.money-info .pricetag {
+  text-transform: uppercase;
+  /* letter-spacing: .5px; */
+  letter-spacing: .036em;
+}
+
+.money-info .pricetag, .money-info .price {
+  margin: 0px;
+  color: #333;
+  //text-align: left;
+  /* font-size: 12px; */
+  font-size: .857em;
+  padding: 0px;
+}
+
+.money-info .price {
+  font-family: "GTWalsheim", sans-serif;
+}
+
+@include media('>=560px') {
+  .main-dolls-list {
+    .item {
+      padding-right: .429em;
+    }
+  }
+}
+
+
+@include media('>=lg') {
+  .main-dolls-list {
+    .item {
+      padding: .429em;
+    }
+  }
+}
+
+@include media('>=sm') {
+  .main {
+    /* increase component font size by 50% relative to 14px body */
+    font-size: 1.8rem;
+  }
+}
+
+@include media('>=md', '<lg') {
+
+  .doll-item-image {
+    text-align: center;
+  }
+
+  .tags.notags {
+    display:none;
+  }
+
+  .btn-doll-customize-shape {
+    width: 70%;
+  }
+
+  .main-dolls-list .item svg {
+    width: 80%;
+    float: none;
+    margin-right: 0;
+  }
+
+  .doll-item-info {
+    text-align: center;
+  }
+
+  .main {
+    /* increase component font size by 50% relative to 14px body */
+    font-size: 2.2rem;
+  }
+}
+
+@include media('>=lg') {
+  .main {
+    /* increase component font size by 50% relative to 14px body */
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,80 @@
+/* LOADING INDICATOR */
+
+.loading-indicator {
+  height: 150px;
+  margin: 0 auto;
+  max-width: 100px;
+}
+
+.loading-indicator h5 {
+  position: relative;
+  top: 50%;
+  font-family: "GTWalsheim", sans-serif;
+  -webkit-transform: translateY(-50%) translateX(-1.1%);
+  -ms-transform: translateY(-50%) translateX(-1.1%);
+  transform: translateY(-50%) translateX(-1.1%);
+}
+
+i.spinner {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  line-height: 2em;
+  vertical-align: middle;
+  top: 50%;
+  -webkit-transform: translateY(-6%) translateX(15%);
+  -ms-transform: translateY(-6%) translateX(15%);
+  transform: translateY(-6%) translateX(15%);
+}
+
+i.spinner span {
+  width: 6%;
+  height: 16%;
+  background: #333;
+  position: absolute;
+  left: 49%;
+  top: 43%;
+  opacity: 0;
+  -webkit-border-radius: 50px;
+  -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  -webkit-animation: fade 800ms linear infinite;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 1;}
+  to {opacity: 0.25;}
+}
+
+i.spinner span.bar1 {
+  -webkit-transform:rotate(0deg) translate(0, -110%);
+  -webkit-animation-delay: 0ms;
+}    
+i.spinner span.bar2 {
+  -webkit-transform:rotate(45deg) translate(0, -110%); 
+  -webkit-animation-delay: -700ms;
+}
+i.spinner span.bar3 {
+  -webkit-transform:rotate(90deg) translate(0, -110%); 
+  -webkit-animation-delay: -600ms;
+}
+i.spinner span.bar4 {
+  -webkit-transform:rotate(135deg) translate(0, -110%); 
+  -webkit-animation-delay: -500ms;
+}
+i.spinner span.bar5 {
+  -webkit-transform:rotate(180deg) translate(0, -110%); 
+  -webkit-animation-delay: -400ms;
+}
+i.spinner span.bar6 {
+  -webkit-transform:rotate(225deg) translate(0, -110%); 
+  -webkit-animation-delay: -300ms;
+}
+i.spinner span.bar7 {
+  -webkit-transform:rotate(270deg) translate(0, -110%); 
+  -webkit-animation-delay: -200ms;
+}
+i.spinner span.bar8 {
+  -webkit-transform:rotate(315deg) translate(0, -110%); 
+  -webkit-animation-delay: -100ms;
+}

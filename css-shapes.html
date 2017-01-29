@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head profile="http://gmpg.org/xfn/11">
+    <meta http-equiv="Content-Type" content="text/html; UTF-8" />
+    <!-- Create responsive viewport that is not user-scable with touch gestures -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>CSS SHAPES YO | CSS Experiment</title>
+    <meta name='robots' content='noindex,nofollow' />
+    <style>
+      .dollCirlce {
+        float: left;
+        width: 150px;
+        /* 
+        shape-outside: circle(70% at 0% 50%) border-box;
+        */
+        -webkit-shape-outside: url('/assets/images/doll-circle.svg');
+        -webkit-shape-image-threshold: 0.5;
+        -webkit-shape-margin: 1em;
+        shape-outside: url('/assets/images/doll-circle.svg');
+        shape-image-threshold: 0.5;
+        shape-margin: 1em;
+        margin-right: 1em;
+      }
+      #mainShow {
+        margin-right: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <svg class="dollCirlce" viewBox="0 0 163 163" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMinYMin meet">
+      <defs>
+        <clipPath id="dollImageCrop">
+          <circle id="dollCircleCrop" cx="83.5" cy="83.5" r="75"/>
+        </clipPath>
+        <circle id="dollBeforeCircle" cx="84.5" cy="81.5" r="78.5"/>
+        <circle id="dollAfterCircle" cx="78" cy="78" r="75" fill="rgba(255,255,255, 0)" stroke-dasharray="7,5"/>
+      </defs>
+      <use xlink:href="#dollBeforeCircle" class="background" fill="#A2E9B1" />
+      <g id="dollImageMask" clip-path="url(#dollImageCrop)">
+        <image xlink:href="/assets/images/pigtails.jpg" x="5.5" y="5.5" height="155" width="155" />
+      </g>
+      <use xlink:href="#dollAfterCircle" class="foreground" stroke="#e6e6e6" stroke-width="2"/>
+    </svg>
+    <h1>yo CSS shapes!</h1>
+    <p id="mainShow">An Event Apart (AEA) attendees are UX professionals, developers, and designers—including interaction designers, graphic designers, and UI designers. Project managers, writer/editors, marketers, strategists, and even site owners and clients attend. This wide spectrum of roles speaks to the uniquely comprehensive and multi-disciplinary nature of this single-track event.
+    AEA attendees, like other conference attendees, want to improve job skills and make new community and business connections in an intense and fun environment. But unlike the typical conference goer, AEA attendees have that gleam in their eye that comes from the belief that through advocacy and hard work, they can make a meaningful difference.</p>
+  </body>
+</html>

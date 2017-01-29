@@ -1,0 +1,24 @@
+/* === PAGE LAYOUT ##START## === */
+
+.shaa {
+  border: 2px solid red;
+  list-style: none;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.shaa {
+  li {
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    font-size: 1.5em;
+    background-color: #8cacea;
+    margin: 5px;
+    padding: 5px;
+  }
+}
+
+/* === PAGE LAYOUT ##END## === */
