@@ -1,0 +1,157 @@
+/**
+ * Form inputs
+ */
+input,
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+  background-color: white;
+  border: 2px solid #D8D4C7;
+  color: #5A6E73;
+  padding: 0.55556rem;
+  transition: 0.25s cubic-bezier(0.17, 0.67, 0.52, 0.97);
+  width: 100%; }
+  input:focus,
+  input[type='text']:focus,
+  input[type='email']:focus,
+  input[type='password']:focus {
+    border-color: #29A88E;
+    box-shadow: 0 0 6px rgba(41, 168, 142, 0.5);
+    outline: none; }
+  input.input--alert,
+  input[type='text'].input--alert,
+  input[type='email'].input--alert,
+  input[type='password'].input--alert {
+    border-color: #FFD035;
+    box-shadow: 0 0 6px rgba(255, 208, 53, 0.5); }
+
+textarea:-ms-input-placeholder,
+input[type="text"]:-ms-input-placeholder {
+  color: #D8D4C7; }
+
+/**
+ * Radio / Checkbox
+ */
+input[type='radio'] {
+  display: inline-block;
+  height: auto;
+  vertical-align: middle;
+  width: auto; }
+  input[type='radio'] + label {
+    vertical-align: middle; }
+
+/*
+  * Select field
+  */
+select,
+.select {
+  background-color: white;
+  border: 2px solid #D8D4C7;
+  color: #5A6E73;
+  padding: 0.55556rem;
+  transition: 0.25s cubic-bezier(0.17, 0.67, 0.52, 0.97);
+  width: 100%;
+  appearance: none;
+  background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><style>.st0{fill:%23333333;}</style><path class="st0" d="M3 1L0 7h6zM3 15l3-6H0z"/></svg>');
+  background-size: 16px;
+  background-position: right center;
+  background-repeat: no-repeat;
+  font-weight: bold; }
+  select:focus,
+  .select:focus {
+    border-color: #29A88E;
+    box-shadow: 0 0 6px rgba(41, 168, 142, 0.5);
+    outline: none; }
+
+.select-footer {
+  background-color: #29A88E;
+  background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><style>.st0{fill:%23ffffff;}</style><path class="st0" d="M3 1L0 7h6zM3 15l3-6H0z"/></svg>');
+  border: 2px solid #FFFFFF; }
+  .select-footer:focus {
+    border-color: white;
+    box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5); }
+
+.ie9 .select {
+  padding-right: 0; }
+
+@supports (-ms-accelerator: true) {
+  select,
+  .select,
+  .select-footer {
+    appearance: menulist; } }
+
+select[disabled] {
+  background: none;
+  color: #ACA99D; }
+
+/*
+  * Textarea field
+  */
+textarea,
+.textarea {
+  background-color: white;
+  border: 2px solid #D8D4C7;
+  color: #5A6E73;
+  padding: 0.55556rem;
+  transition: 0.25s cubic-bezier(0.17, 0.67, 0.52, 0.97);
+  width: 100%;
+  height: 9.16667rem;
+  resize: vertical;
+  line-height: 1.2;
+  padding-top: 0.44444rem; }
+  textarea:focus,
+  .textarea:focus {
+    border-color: #29A88E;
+    box-shadow: 0 0 6px rgba(41, 168, 142, 0.5);
+    outline: none; }
+
+/*
+  * Big fancy checkbox
+  */
+.big-radio,
+.big-checkbox {
+  position: absolute;
+  opacity: 0; }
+  .big-radio + label + label,
+  .big-checkbox + label + label {
+    margin-left: 5px;
+    line-height: 34px;
+    vertical-align: bottom; }
+  .big-radio + label,
+  .big-checkbox + label {
+    display: inline-block;
+    cursor: pointer;
+    width: 2.22222rem;
+    height: 2.22222rem;
+    background: #F5F5F0;
+    border-radius: 50%;
+    border: 2px solid #D8D4C7; }
+    .big-radio + label:before,
+    .big-checkbox + label:before {
+      visibility: hidden;
+      content: '✔';
+      display: inline-block;
+      width: 100%;
+      position: relative;
+      top: 0.33333rem;
+      left: 0.05556rem;
+      line-height: 1;
+      text-align: center;
+      font-size: 1.05556rem;
+      color: white;
+      font-weight: bold; }
+  .big-radio:checked + label,
+  .big-checkbox:checked + label {
+    background: #29A88E;
+    border-color: transparent; }
+    .big-radio:checked + label:before,
+    .big-checkbox:checked + label:before {
+      visibility: visible; }
+
+.big-checkbox + label {
+  border-radius: 0.27778rem; }
+  .big-checkbox + label:before {
+    left: -0.11111rem; }
+
+.media__image .big-checkbox + label {
+  display: block; }

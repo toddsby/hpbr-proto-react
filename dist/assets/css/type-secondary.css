@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "GTWalsheim-Medium";
+  src: url('../fonts/GTWalsheim/GT-Walsheim-Medium.eot');
+  src: url('../fonts/GT-Walsheim/GT-Walsheim-Medium.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/GT-Walsheim/GT-Walsheim-Medium.woff') format('woff'),
+       url('../fonts/GT-Walsheim/GT-Walsheim-Medium.ttf')  format('truetype'),
+       url('../fonts/GT-Walsheim/GT-Walsheim-Medium.svg#GT-Walsheim-Medium') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GTWalsheim";
+  src: url('../fonts/GT-Walsheim/GT-Walsheim-Regular.eot');
+  src: url('../fonts/GT-Walsheim/GT-Walsheim-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/GT-Walsheim/GT-Walsheim-Regular.woff') format('woff'),
+       url('../fonts/GT-Walsheim/GT-Walsheim-Regular.ttf')  format('truetype'),
+       url('../fonts/GT-Walsheim/GT-Walsheim-Regular.svg#GT-Walsheim-Regular') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GTWalsheim-Bold";
+  src: url('../fonts/GT-Walsheim/GT-Walsheim-Medium.eot');
+  src: url('../fonts/GT-Walsheim/GT-Walsheim-Medium.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/GT-Walsheim/GT-Walsheim-Medium.woff') format('woff'),
+       url('../fonts/GT-Walsheim/GT-Walsheim-Medium.ttf')  format('truetype'),
+       url('../fonts/GT-Walsheim/GT-Walsheim-Medium.svg#GT-Walsheim-Medium') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MSansText";
+  src:url('../fonts/SansSerif/MSansText.eot');
+  src:url('../fonts/SansSerif/MSansText.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SansSerif/MSansText.woff') format('woff'),
+    url('../fonts/SansSerif/MSansText.ttf') format('truetype'),
+    url('../fonts/SansSerif/MSansText.svg#museo_sans500') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
