@@ -11,7 +11,7 @@ const HomeList = React.createClass({
 
     return (
       <section className="main-dolls">
-        <React.addons.TransitionGroup component="ul" className="main-dolls-list Grid Grid--full med-Grid--1of3 small-Grid--1of2 large-Grid--fit">
+        <React.addons.TransitionGroup component="ul" className="main-dolls-list Grid Grid-full med-Grid-1of3 small-Grid-1of2 large-Grid-fit">
           { items.map((item, index) => {
               return <HomeListItem key={index} idx={index} item={item} clicked={onListItemClick} />
             }) 

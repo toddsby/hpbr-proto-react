@@ -188,7 +188,7 @@ const LoginModal = React.createClass({
     return (
       <div>
         <div className="app-overlay login-modal-container">
-          <div ref={this._getOverlay} onClick={this._closeLoginModal} id="app-modal-overlay" key="app-overlay-modal-bg-01" className="login-modal Grid Grid--fit">           
+          <div ref={this._getOverlay} onClick={this._closeLoginModal} id="app-modal-overlay" key="app-overlay-modal-bg-01" className="login-modal Grid Grid-fit">           
             <form onSubmit={this._handleSubmit} ref={this._getModal} className="Grid-cell login-modal-form" noValidate>
               <section className="app-modal-header">
                 <i onClick={this._closeLoginModal} className="app-modal-cancel" id="app-modal-login-cancel">
@@ -196,7 +196,7 @@ const LoginModal = React.createClass({
                 </i>
                 <h1 className="centered">{panel.h1}</h1>
                 <div className="panel-selector">
-                  <ul className="Grid Grid Grid--1of2">
+                  <ul className="Grid Grid Grid-1of2">
                     <li className="Grid-cell" ref={ this._getJoinLink } onClick={this._handleSwitcherClick}>Join</li>
                     <li className="Grid-cell" ref={ this._getLoginLink } onClick={this._handleSwitcherClick}>Login</li>
                   </ul>
@@ -221,12 +221,12 @@ const LoginModal = React.createClass({
                   <small className="hidden error" >Password is required</small>
                 </div>
               </div>
-              <div className="modal-footer Grid Grid--fit">
+              <div className="modal-footer Grid Grid-fit">
                 <div className="Grid-cell">
                   <button className="btn btn-doll-customize-shape cancel">Cancel</button>
                 </div>
                 <div className="Grid-cell app-modal-login-btn">
-                  <button className="btn btn-doll-customize-shape login-modal" type="submit">{panel.btnText}</button>
+                  <button className="btn btn-doll-customize-shape" type="submit">{panel.btnText}</button>
                 </div>
                 <div className="Grid-cell Grid-break"></div> 
                 <div className="Grid-cell join-us">  

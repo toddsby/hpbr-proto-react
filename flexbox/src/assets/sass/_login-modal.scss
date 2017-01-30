@@ -10,11 +10,16 @@
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   height: 100%;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 
-.Grid--fit > .Grid-cell.login-modal-form {
+.Grid-fit > .Grid-cell.login-modal-form {
+  //-moz-box-flex: 0 0 96%;         /* OLD - Firefox 19- */
+  -webkit-flex: 0 0 96%;          /* OLD Chrome, OLD Safari */
+  -ms-flex: 0 0 96%; 
   flex: 0 0 96%;
   font-family: "MSansText", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
@@ -86,6 +91,9 @@
     }
   }
   align-self: center;
+  //-moz-box-flex: 0 0 100%;         /* OLD - Firefox 19- */
+  -webkit-flex: 0 0 100%;          /* OLD Chrome, OLD Safari */
+  -ms-flex: 0 0 100%; 
   flex: 0 0 100%;
 }
 
@@ -102,7 +110,10 @@
   padding-bottom: .571em;
 }
 
-.login-modal-form .Grid--fit > .Grid-cell.app-modal-login-btn {
+.login-modal-form .Grid-fit > .Grid-cell.app-modal-login-btn {
+  //-moz-box-flex: 4 0 0;         /* OLD - Firefox 19- */
+  -webkit-flex: 4 0 0;          /* OLD Chrome, OLD Safari */
+  -ms-flex: 4 0 0; 
   flex: 4 0 0;
   padding-left: .571em;
 }

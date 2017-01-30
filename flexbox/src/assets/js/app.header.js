@@ -79,7 +79,7 @@ const AppHeader = React.createClass({
     let acctActive = ( this.state.accountActive ) ? "Grid-cell active" : "Grid-cell";
     return (
       <header id="home-header" className={contentBlur}>
-        <div id="home-header-content" className="Grid Grid--fit">
+        <div id="home-header-content" className="Grid Grid-fit">
           <section onTouchStart={this._handleTouchStart} onTouchEnd={this._handleTouchEnd} id="home-header-logo" className="Grid-cell">
             <div className="home-header-item-container logo">
               <LogoType svgId="home-header-logotype"/>

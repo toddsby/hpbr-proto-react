@@ -3,7 +3,7 @@ const EyeIcon = React.createClass({
   render: function() {
     let { svgId } = this.props;
     return (   
-      <svg viewBox="80 80 320 568" preserveAspectRatio="xMinYMin meet">
+      <svg viewBox="-20 50 120 368" preserveAspectRatio="xMinYMin meet">
         <g id={ svgId }>
           <title>Eye</title>
           <description>Visual representation of a human eye</description>

@@ -1,5 +1,9 @@
 .Grid {
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;  
   display: flex;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
@@ -7,216 +11,242 @@
 }
 
 .Grid-cell {
+  //-moz-box-flex: 1;         /* OLD - Firefox 19- */
+  -webkit-flex: 1;          /* Chrome */
+  -ms-flex: 1; 
   flex: 1;
 }
 
 .Grid-cell.Grid-break {
+  -webkit-flex-basis: 100%;
   flex-basis: 100%;
   width: 0px; 
   height: 0px; 
   overflow: hidden;
 }
 
-.Grid--flexCells > .Grid-cell {
+.Grid-flexCells > .Grid-cell {
   display: flex;
 }
 
-.Grid--top {
+.Grid-top {
   align-items: flex-start;
 }
 
-.Grid--bottom {
+.Grid-bottom {
   align-items: flex-end;
 }
 
-.Grid--center {
+.Grid-center {
   align-items: center;
 }
 
-.Grid--justifyCenter {
+.Grid-justifyCenter {
   justify-content: center;
 }
 
-.Grid-cell--top {
+.Grid-cell-top {
   align-self: flex-start;
 }
 
-.Grid-cell--bottom {
+.Grid-cell-bottom {
   align-self: flex-end;
 }
 
-.Grid-cell--center {
+.Grid-cell-center {
   align-self: center;
 }
 
-.Grid-cell--autoSize {
+.Grid-cell-autoSize {
   flex: none;
 }
 
-.Grid--fit > .Grid-cell {
-  //flex: 1;
+.Grid-fit > .Grid-cell {
+  //-moz-box-flex: 0 0 auto;         /* OLD - Firefox 19- */
+  -webkit-flex: 0 0 auto;          /* OLD Chrome, OLD Safari */
+  -ms-flex: 0 0 auto; 
   flex: 0 0 auto;
 }
 
-.Grid--full > .Grid-cell {
+.Grid-full > .Grid-cell {
+  //-moz-box-flex: 0 0 100%;         /* OLD - Firefox 19- */
+  -webkit-flex: 0 0 100%;          /* OLD Chrome, OLD Safari */
+  -ms-flex: 0 0 100%; 
   flex: 0 0 100%;
 }
 
-.Grid--1of2 > .Grid-cell {
+.Grid-1of2 > .Grid-cell {
   flex: 0 0 50%;
 }
 
-.Grid--1of3 > .Grid-cell {
+.Grid-1of3 > .Grid-cell {
   flex: 0 0 33.3333%;
 }
 
-.Grid--1of4 > .Grid-cell {
+.Grid-1of4 > .Grid-cell {
   flex: 0 0 25%;
 }
 
 @include media('>=560px', 'landscape') {
-  .small-Grid--1of2 > .Grid-cell {
+  .small-Grid-1of2 > .Grid-cell {
     flex: 0 0 50%;
   }
 }
 
 @include media('>=sm') {
 
-  .small-Grid--fit > .Grid-cell {
+  .small-Grid-fit > .Grid-cell {
     flex: 1;
   }
-  .small-Grid--full > .Grid-cell {
+  .small-Grid-full > .Grid-cell {
+    //-moz-box-flex: 0 0 100%;         /* OLD - Firefox 19- */
+    -webkit-flex: 0 0 100%;          /* OLD Chrome, OLD Safari */
+    -ms-flex: 0 0 100%; 
     flex: 0 0 100%;
   }
-  .small-Grid--1of2 > .Grid-cell {
+  .small-Grid-1of2 > .Grid-cell {
+    //-moz-box-flex: 0 0 50%;         /* OLD - Firefox 19- */
+    -webkit-flex: 0 0 50%;          /* OLD Chrome, OLD Safari */
+    -ms-flex: 0 0 50%; 
     flex: 0 0 50%;
   }
-  .small-Grid--1of3 > .Grid-cell {
+  .small-Grid-1of3 > .Grid-cell {
     flex: 0 0 33.3333%;
   }
-  .small-Grid--1of4 > .Grid-cell {
+  .small-Grid-1of4 > .Grid-cell {
     flex: 0 0 25%;
   }
 }
 
 @include media('>=md') {
 
-  .med-Grid--fit > .Grid-cell {
+  .med-Grid-fit > .Grid-cell {
     flex: 1;
   }
-  .med-Grid--full > .Grid-cell {
+  .med-Grid-full > .Grid-cell {
+    //-moz-box-flex: 0 0 100%;         /* OLD - Firefox 19- */
+    -webkit-flex: 0 0 100%;          /* OLD Chrome, OLD Safari */
+    -ms-flex: 0 0 100%; 
     flex: 0 0 100%;
   }
-  .med-Grid--1of2 > .Grid-cell {
+  .med-Grid-1of2 > .Grid-cell {
     flex: 0 0 50%;
   }
-  .med-Grid--1of3 > .Grid-cell {
+  .med-Grid-1of3 > .Grid-cell {
+    //-moz-box-flex: 0 0 33.3333%;         /* OLD - Firefox 19- */
+    -webkit-flex: 0 0 33.3333%;          /* OLD Chrome, OLD Safari */
+    -ms-flex: 0 0 33.3333%; 
     flex: 0 0 33.3333%;
   }
-  .med-Grid--1of4 > .Grid-cell {
+  .med-Grid-1of4 > .Grid-cell {
     flex: 0 0 25%;
   }
 }
 
 @include media('>=lg') {
-  .large-Grid--fit > .Grid-cell {
-    //flex: 1 0 auto;
-    flex: 0 0 auto;
+  .large-Grid-fit > .Grid-cell {
+    //-moz-box-flex: 0 0 auto;         /* OLD - Firefox 19- */
+    -webkit-flex: 0 0 auto;          /* OLD Chrome, OLD Safari */
+    -ms-flex: 0 0 auto;  
+    //flex: 0 0 auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto; 
   }
-  .large-Grid--full > .Grid-cell {
+  .large-Grid-full > .Grid-cell {
     flex: 0 0 100%;
   }
-  .large-Grid--1of2 > .Grid-cell {
+  .large-Grid-1of2 > .Grid-cell {
     flex: 0 0 50%;
   }
-  .large-Grid--1of3 > .Grid-cell {
+  .large-Grid-1of3 > .Grid-cell {
     flex: 0 0 33.3333%;
   }
-  .large-Grid--1of4 > .Grid-cell {
+  .large-Grid-1of4 > .Grid-cell {
     flex: 0 0 25%;
   }
 }
 
-.Grid--gutters {
+.Grid-gutters {
   margin: -1em 0 1em -1em;
 }
-.Grid--gutters > .Grid-cell {
+.Grid-gutters > .Grid-cell {
   padding: 1em 0 0 1em;
 }
 
-.Grid--guttersLg {
+.Grid-guttersLg {
   margin: -1.5em 0 1.5em -1.5em;
 }
-.Grid--guttersLg > .Grid-cell {
+.Grid-guttersLg > .Grid-cell {
   padding: 1.5em 0 0 1.5em;
 }
 
-.Grid--guttersXl {
+.Grid-guttersXl {
   margin: -2em 0 2em -2em;
 }
-.Grid--guttersXl > .Grid-cell {
+.Grid-guttersXl > .Grid-cell {
   padding: 2em 0 0 2em;
 }
 
 @include media('>=sm') {
-  .small-Grid--gutters {
+  .small-Grid-gutters {
     margin: -1em 0 1em -1em;
   }
-  .small-Grid--gutters > .Grid-cell {
+  .small-Grid-gutters > .Grid-cell {
     padding: 1em 0 0 1em;
   }
-  .small-Grid--guttersLg {
+  .small-Grid-guttersLg {
     margin: -1.5em 0 1.5em -1.5em;
   }
-  .small-Grid--guttersLg > .Grid-cell {
+  .small-Grid-guttersLg > .Grid-cell {
     padding: 1.5em 0 0 1.5em;
   }
-  .small-Grid--guttersXl {
+  .small-Grid-guttersXl {
     margin: -2em 0 2em -2em;
   }
-  .small-Grid--guttersXl > .Grid-cell {
+  .small-Grid-guttersXl > .Grid-cell {
     padding: 2em 0 0 2em;
   }
 }
 
 @include media('>=md') {
-  .med-Grid--gutters {
+  .med-Grid-gutters {
     margin: -1em 0 1em -1em;
   }
-  .med-Grid--gutters > .Grid-cell {
+  .med-Grid-gutters > .Grid-cell {
     padding: 1em 0 0 1em;
   }
-  .med-Grid--guttersLg {
+  .med-Grid-guttersLg {
     margin: -1.5em 0 1.5em -1.5em;
   }
-  .med-Grid--guttersLg > .Grid-cell {
+  .med-Grid-guttersLg > .Grid-cell {
     padding: 1.5em 0 0 1.5em;
   }
-  .med-Grid--guttersXl {
+  .med-Grid-guttersXl {
     margin: -2em 0 2em -2em;
   }
-  .med-Grid--guttersXl > .Grid-cell {
+  .med-Grid-guttersXl > .Grid-cell {
     padding: 2em 0 0 2em;
   }
 }
 
 @include media('>=lg') {
-  .large-Grid--gutters {
+  .large-Grid-gutters {
     margin: -1em 0 1em -1em;
   }
-  .large-Grid--gutters > .Grid-cell {
+  .large-Grid-gutters > .Grid-cell {
     padding: 1em 0 0 1em;
   }
-  .large-Grid--guttersLg {
+  .large-Grid-guttersLg {
     margin: -1.5em 0 1.5em -1.5em;
   }
-  .large-Grid--guttersLg > .Grid-cell {
+  .large-Grid-guttersLg > .Grid-cell {
     padding: 1.5em 0 0 1.5em;
   }
-  .large-Grid--guttersXl {
+  .large-Grid-guttersXl {
     margin: -2em 0 2em -2em;
   }
-  .large-Grid--guttersXl > .Grid-cell {
+  .large-Grid-guttersXl > .Grid-cell {
     padding: 2em 0 0 2em;
   }
 }
